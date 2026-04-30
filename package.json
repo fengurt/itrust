@@ -1,0 +1,20 @@
+{
+  "name": "itrust-research-platform",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev:web": "pnpm --filter @itrust/shared build && pnpm --filter @itrust/web dev",
+    "dev:agent": "pnpm --filter @itrust/connectors build && pnpm --filter @itrust/agent-api dev",
+    "all:dev": "concurrently -k -n agent,web -c blue,magenta \"pnpm run dev:agent\" \"pnpm run dev:web\"",
+    "all:ci": "pnpm install && pnpm run build && pnpm run test",
+    "test": "pnpm --filter @itrust/shared test && pnpm --filter @itrust/data-cache test && pnpm --filter @itrust/connectors test && pnpm --filter @itrust/agent-api test && pnpm --filter @itrust/mcp-research test",
+    "lint": "pnpm -r run lint"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

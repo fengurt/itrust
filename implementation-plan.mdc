@@ -1,0 +1,52 @@
+---
+description: Ordered implementation log for iTRUST Research Platform. Mark each step Done with a two-line summary when finished.
+---
+
+# Implementation plan
+
+After completing a step, change its status to **Done** and append exactly **two lines** summarizing what was done.
+
+## Phase 0 — Foundation
+
+1. [x] Monorepo root (`pnpm-workspace.yaml`, root `package.json`, `tsconfig.base.json`) — **Done** _Created pnpm workspace with apps and packages._ _Added shared TypeScript base and root scripts._
+2. [x] Governance docs (`cursor_project_rules/*`) — **Done** _Added README, ARCHITECTURE, SECURITY._ _Documented evidence-first policy and MCP boundaries._
+
+## Phase 1 — UI shell
+
+3. [x] `apps/web` Next.js + Tailwind + IPTRUST tokens — **Done** _Scaffolded App Router with `@theme` tokens and AppShell/Button/Card._ _Home, research, and uploads routes aligned to palette and 8px rhythm._
+
+## Phase 2 — Connectors
+
+4. [x] `packages/shared` evidence schema — **Done** _Zod `EvidenceRecord` plus stream chunk and search input schemas._ _Vitest smoke for schema parsing._
+5. [x] `packages/data-cache` — **Done** _LRU+TTL `ResponseCache` with composite keys._ _Unit test for set/get path._
+6. [x] `packages/connectors` adapters — **Done** _OpenAlex, Crossref, arXiv, World Bank GDP growth, Hacker News, uploads manifest._ _Cached academic/real-world merges with Vitest fetch stub._
+
+## Phase 3 — MCP
+
+7. [x] `apps/mcp-research` MCP server + tools — **Done** _McpServer + stdio transport registering research tools._ _Includes ingest/list/fetch helpers plus schema Vitest._
+
+## Phase 4 — Agent API
+
+8. [x] `apps/agent-api` orchestration + SSE — **Done** _Hono `/v1/research/stream` streams JSON SSE chunks from inline connector pipeline._ _POST `/v1/uploads` appends manifest rows; citation policy gate in `policy.ts`._
+
+## Phase 5 — GUI
+
+9. [x] Research chat, filters, evidence board, uploads — **Done** _Client research page consumes SSE via `consumeResearchSse`._ _Next rewrite `/api/agent/*` → agent host; uploads form hits agent API._
+
+## Phase 6 — Skill
+
+10. [x] `.cursor/skills/itrust-research-assistant` — **Done** _Project skill with instructions, guardrails, MCP tool list._ _reference.md + examples.md for output modes._
+
+## Phase 7 — Quality & launch
+
+11. [x] Tests + docs + env template — **Done** _Workspace `pnpm test` + README + runbook + environment-variables doc._ _`.env.example` blocked by policy; vars documented under `docs/`._
+
+---
+
+## Log (append only)
+
+| Date | Step | Summary line 1 | Summary line 2 |
+|------|------|----------------|----------------|
+| 2026-04-23 | 1–11 | Delivered monorepo web/agent/mcp/packages with IPTRUST UI, connectors, SSE research, MCP tools, skill, tests, docs. | Agent uses inline `@itrust/connectors` for streaming; MCP server ships separately for Cursor tool hosts. |
+| 2026-04-24 | UX | Web shell: client `AppNav` with `aria-current` and accent active state; skip link and `#main-content`; sticky header with blur. | Palette-aligned `.feedback-negative` for errors (research/uploads); root metadata title template and Open Graph basics. |
+| 2026-04-24 | model | `/model`: replaced `next/dynamic` with mount-gated static import of `ModelVizBoard` so Recharts loads in the route bundle (avoids broken lazy chunks / endless loading). | `transpilePackages` includes `recharts`; radar container keeps explicit `height` + `minHeight` for `ResponsiveContainer`. |
