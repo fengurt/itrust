@@ -1,0 +1,27 @@
+[railway]
+  pluginVersion = "v2"
+
+[service.web]
+  name = "web"
+  path = "apps/web"
+  port = 3000
+  healthcheckPath = "/"
+  buildCommand = "pnpm install --frozen-lockfile && pnpm run build"
+  startCommand = "pnpm run start"
+
+[service.agent-api]
+  name = "agent-api"
+  path = "apps/agent-api"
+  port = 3001
+  buildCommand = "pnpm install --frozen-lockfile && pnpm --filter @itrust/shared build && pnpm --filter @itrust/connectors build && pnpm run build"
+  startCommand = "pnpm run start"
+  [service.agent-api.environment]
+    NODE_ENV = "production"
+
+[service.mcp-research]
+  name = "mcp-research"
+  path = "apps/mcp-research"
+  buildCommand = "pnpm install --frozen-lockfile && pnpm --filter @itrust/shared build && pnpm --filter @itrust/connectors build && pnpm run build"
+  startCommand = "pnpm run start"
+  [service.mcp-research.environment]
+    NODE_ENV = "production"
