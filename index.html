@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="iTRUST — 商业数字孪生决策系统：用同一套孪生与评估模型，连接叙事、协作与决策。"
-    />
+    <meta name="description" content="iTRUST — 把商业决策从「靠经验」变成「有模型可算」。商业数字孪生决策系统。" />
     <title>iTRUST · 商业数字孪生决策</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,10 +19,10 @@
       <div class="shell header-inner">
         <a class="brand" href="#main">i<span>TRUST</span></a>
         <nav class="nav" aria-label="页面导航">
-          <a href="#model">模型</a>
-          <a href="#uses">应用</a>
-          <a href="#proof">价值</a>
-          <a href="#contrast">差异</a>
+          <a href="#demo">参数系统</a>
+          <a href="#modules">十二模块</a>
+          <a href="#cases">案例数字</a>
+          <a href="#compare">对比表</a>
           <a href="itrust30.md">白皮书 MD</a>
         </nav>
       </div>
@@ -35,206 +32,347 @@
       <section class="hero hero-landing" aria-labelledby="hero-title">
         <div class="shell hero-landing-inner">
           <div class="hero-copy">
-            <p class="hero-eyebrow">决策操作系统 · 3.0</p>
-            <h1 id="hero-title">把公司放进一颗「可计算的孪生」里</h1>
+            <p class="hero-eyebrow">商业数字孪生 · 3.0</p>
+            <h1 id="hero-title">调一个假设，全部分数联动重算</h1>
             <p class="hero-lead hero-lead-tight">
-              iTRUST 不是又一叠静态文档模板，而是一套<strong>商业数字孪生 + 可插拔评估模块</strong>：
-              实时假设、结构化评判、可追溯协作 — 让融资叙事、多方交易与战略取舍共用同一套真相版本。
+              iTRUST 把公司的前提、时机、需求、壁垒、财务等拆成
+              <strong style="color:var(--color-white)">12 个独立可插拔的模块</strong>。
+              改一个参数，分数、权重、叙事、协议自动联动 — 而不是手动改完一版 PDF 再发给所有人核对。
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#uses">看它解决什么问题</a>
-              <a class="btn btn-ghost" href="#model">先看模型怎么转起来</a>
+              <a class="btn btn-primary" href="#demo">看参数系统怎么跑</a>
+              <a class="btn btn-ghost" href="#modules">十二模块一览</a>
             </div>
           </div>
-          <div class="hero-diagram" aria-hidden="true">
-            <div class="loop-ring">
-              <span class="loop-dot"></span>
-              <span class="loop-label">物理 &amp; 业务信号</span>
+          <div class="hero-mock" aria-hidden="true">
+            <div class="mock-header">
+              <span>iTRUST · 融资计划书</span>
+              <span>种子轮 · AI原生加成后</span>
             </div>
-            <div class="loop-arrow">→</div>
-            <div class="loop-ring loop-ring-mid">
-              <span class="loop-dot"></span>
-              <span class="loop-label">孪生与图谱</span>
+            <div class="mock-table">
+              <div class="mock-row mock-row-head">
+                <span>模块</span><span>权重</span><span>得分</span>
+              </div>
+              <div class="mock-row">
+                <span class="mock-mod">I 前提洞察</span>
+                <span class="mock-w">40%</span>
+                <span class="mock-s">8.2</span>
+              </div>
+              <div class="mock-row">
+                <span class="mock-mod">T 时机窗口</span>
+                <span class="mock-w">25%</span>
+                <span class="mock-s">7.1</span>
+              </div>
+              <div class="mock-row">
+                <span class="mock-mod">R 价值交付</span>
+                <span class="mock-w">20%</span>
+                <span class="mock-s">6.8</span>
+              </div>
+              <div class="mock-row mock-row-total">
+                <span>综合评分</span>
+                <span></span>
+                <span class="mock-total">7.49</span>
+              </div>
             </div>
-            <div class="loop-arrow">→</div>
-            <div class="loop-ring">
-              <span class="loop-dot"></span>
-              <span class="loop-label">推理 · 模拟 · 生成</span>
+            <div class="mock-edit">
+              <span class="mock-label">调整增长假设</span>
+              <div class="mock-slider-track">
+                <div class="mock-slider-fill" style="width:62%"></div>
+                <div class="mock-slider-thumb" style="left:62%"></div>
+              </div>
+              <span class="mock-val">42% → 58%</span>
             </div>
-            <div class="loop-arrow">→</div>
-            <div class="loop-ring loop-ring-out">
-              <span class="loop-dot"></span>
-              <span class="loop-label">叙事 · 协议 · 决策输出</span>
+            <div class="mock-result">
+              <span class="mock-result-badge">综合评分 → 8.31</span>
+              <span class="mock-result-sub">R↑ +0.6 · U↑ +0.3 · 三年预测重算</span>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="model" class="section-editorial section-alt" aria-labelledby="model-title">
-        <div class="shell editorial-split">
-          <div class="editorial-text">
-            <p class="section-eyebrow">模型</p>
-            <h2 id="model-title">四层闭环，一件事贯穿到底</h2>
-            <p class="editorial-lead">
-              多数方法论停在幻灯片；iTRUST 试图停在<strong>可更新的镜像</strong>上 — 数据进来，结构对齐，假设一改，全局联动。
-            </p>
-            <ol class="layer-list">
-              <li>
-                <strong>感知</strong>
-                <span>财报、运营、文本与物联信号统一口径，而不是散落在表格与聊天记录里。</span>
-              </li>
-              <li>
-                <strong>孪生</strong>
-                <span>对象、关系与版本可追溯 — 你和投资人看到的是同一拓扑，而不是两份各自表述的 deck。</span>
-              </li>
-              <li>
-                <strong>认知</strong>
-                <span>语义理解、策略迭代、因果与蒙特卡洛 — 用来压缩「拍脑袋」而不是替代负责人的判断。</span>
-              </li>
-              <li>
-                <strong>应用</strong>
-                <span>计划书、合作协议、行业决策报告 — 输出形态可变，底层评分与假设保持一致。</span>
-              </li>
-            </ol>
-          </div>
-          <div class="editorial-aside">
-            <p class="aside-label">十二维模块 · 按阶段加权</p>
-            <p class="aside-note">
-              同一套字母骨架（I / T / R / U / S / T）拆成 12 个可插拔模块；轮融资阶段变化时，权重随之滑动 — 早期看前提与窗口，成熟期看壁垒与可持续性。
-            </p>
-            <div class="module-matrix" role="list">
-              <span class="module-chip" role="listitem" title="前提洞察">I</span>
-              <span class="module-chip" role="listitem" title="时机窗口">T</span>
-              <span class="module-chip" role="listitem" title="需求验证">R1</span>
-              <span class="module-chip" role="listitem" title="交付能力">R2</span>
-              <span class="module-chip" role="listitem" title="落地实证">R3</span>
-              <span class="module-chip" role="listitem" title="生态位">U1</span>
-              <span class="module-chip" role="listitem" title="壁垒">U2</span>
-              <span class="module-chip" role="listitem" title="财务健康">S1</span>
-              <span class="module-chip" role="listitem" title="资源安全">S2</span>
-              <span class="module-chip" role="listitem" title="风险管控">S3</span>
-              <span class="module-chip" role="listitem" title="团队能力">T1</span>
-              <span class="module-chip" role="listitem" title="执行路径">T2</span>
-            </div>
-            <p class="aside-foot">
-              模块定义、校验逻辑与权重表见
-              <a href="itrust30.md">白皮书 MD</a>（第四、五章）。
-            </p>
           </div>
         </div>
       </section>
 
-      <section id="uses" class="section-editorial" aria-labelledby="uses-title">
+      <section id="demo" class="section-demo" aria-labelledby="demo-title">
         <div class="shell">
           <header class="section-intro">
-            <p class="section-eyebrow">应用</p>
-            <h2 id="uses-title">三道入口，同一底座</h2>
-            <p class="section-intro-desc">
-              网页要讲清的只有一句话：<strong>用户在什么时刻打开 iTRUST，会得到什么不可替代的体验。</strong>
-              下面是三道最典型的入口 — 不是章节复述，而是产品设计视角的切片。
-            </p>
+            <p class="section-eyebrow">核心交互</p>
+            <h2 id="demo-title">改假设，实时联动三个输出</h2>
           </header>
-          <div class="use-grid">
-            <article class="use-card">
-              <p class="use-kicker">叙事 · Narrative</p>
-              <h3 class="use-title">交互式商业叙事</h3>
-              <p class="use-problem">痛点：Deck 改到第十版，假设早已漂移，没人能说清「这一轮数字依据是什么」。</p>
-              <p class="use-fix">
-                iTRUST 把增长率、毛利、市场边界、团队配置等放进<strong>同一套可回放的参数面</strong> — 调一个数，预测与叙事同步改写。
-              </p>
-              <p class="use-outcome">结果：面向投资人、董事会或申报口径，留下的是<strong>可辩论、可版本化</strong>的故事，而不是静态 PDF。</p>
-            </article>
-            <article class="use-card">
-              <p class="use-kicker">协作 · Collaboration</p>
-              <h3 class="use-title">多方交易的信任协议层</h3>
-              <p class="use-problem">痛点：谁贡献了什么难量化，退出与分配谈不拢，事后扯皮成本高。</p>
-              <p class="use-fix">
-                资源投入标准化 → ROI 与里程碑挂钩 → 条款草案与风险提示自动生成；关键节点与分配依据可<strong>链上存证</strong>（若启用）。
-              </p>
-              <p class="use-outcome">结果：把「口头默契」推进到<strong>可审计的流程</strong>，摩擦发生在谈判桌前而不是法庭上。</p>
-            </article>
-            <article class="use-card">
-              <p class="use-kicker">决策 · Decision</p>
-              <h3 class="use-title">行业化的决策副驾驶</h3>
-              <p class="use-problem">痛点：报告很长，行动很短；对标靠印象，节奏靠直觉。</p>
-              <p class="use-fix">
-                行业数据库 + 十二维评分 + 角色定制的报告颗粒度（CEO / IC / 业务负责人）— 输出<strong>带步骤与时间点</strong>的建议，而不是形容词堆砌。
-              </p>
-              <p class="use-outcome">结果：复杂取舍被拆成<strong>可执行的下一步</strong>，模拟结果可见、可对比。</p>
-            </article>
+          <div class="demo-flow">
+            <div class="demo-col">
+              <p class="demo-col-title">输入</p>
+              <p class="demo-col-sub">你在调整的参数</p>
+              <ul class="demo-list">
+                <li>
+                  <span class="demo-param">收入增长率</span>
+                  <span class="demo-from">35%</span>
+                  <span class="demo-arrow">→</span>
+                  <span class="demo-to">52%</span>
+                </li>
+                <li>
+                  <span class="demo-param">目标市场</span>
+                  <span class="demo-from">TAM 8亿</span>
+                  <span class="demo-arrow">→</span>
+                  <span class="demo-to">TAM 22亿</span>
+                </li>
+                <li>
+                  <span class="demo-param">团队配置</span>
+                  <span class="demo-from">4人</span>
+                  <span class="demo-arrow">→</span>
+                  <span class="demo-to">7人（含CTO）</span>
+                </li>
+              </ul>
+            </div>
+            <div class="demo-col">
+              <p class="demo-col-title">孪生 · 评分联动</p>
+              <p class="demo-col-sub">哪些模块分数跟着变</p>
+              <ul class="demo-modules">
+                <li><span>R1 需求验证</span><span class="demo-change up">+0.4</span></li>
+                <li><span>U1 生态位</span><span class="demo-change up">+0.3</span></li>
+                <li><span>T1 团队能力</span><span class="demo-change up">+0.5</span></li>
+                <li><span>S1 财务健康</span><span class="demo-change up">+0.2</span></li>
+              </ul>
+            </div>
+            <div class="demo-col">
+              <p class="demo-col-title">输出</p>
+              <p class="demo-col-sub">三份文档同步更新</p>
+              <ul class="demo-outputs">
+                <li class="demo-output-item">
+                  <span>📄 商业计划书</span>
+                  <span class="demo-out-note">三年财务预测 + 估值模型重算</span>
+                </li>
+                <li class="demo-output-item">
+                  <span>⚖️ 合作协议</span>
+                  <span class="demo-out-note">各方 ROI 重新分配计算</span>
+                </li>
+                <li class="demo-output-item">
+                  <span>📊 决策报告</span>
+                  <span class="demo-out-note">综合评分 7.49 → 8.31</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="proof" class="section-editorial section-alt" aria-labelledby="proof-title">
+      <section id="modules" class="section-modules section-alt" aria-labelledby="modules-title">
         <div class="shell">
-          <header class="section-intro section-intro-narrow">
-            <p class="section-eyebrow">价值锚点</p>
-            <h2 id="proof-title">用数字说话，但不说满</h2>
-            <p class="section-intro-desc">
-              下列数字来自白皮书中的<strong>回溯样本与区间估算</strong>，用于表达数量级 — 真实效果取决于数据质量与落地深度。
-            </p>
+          <header class="section-intro">
+            <p class="section-eyebrow">评分体系</p>
+            <h2 id="modules-title">12 模块 · 可单独用，可任意组合</h2>
           </header>
-          <div class="stat-grid">
-            <div class="stat-card">
-              <p class="stat-value">30–60×</p>
-              <p class="stat-label">端到端决策准备时间（周 → 小时量级）</p>
-            </div>
-            <div class="stat-card">
-              <p class="stat-value">80–90%</p>
-              <p class="stat-label">相对传统顾问堆叠的人力 / 项目成本区间（示意）</p>
-            </div>
-            <div class="stat-card">
-              <p class="stat-value">+17.5<span class="stat-unit">pts</span></p>
-              <p class="stat-label">500 案例回溯下整体准确率中值 uplift（传统约 60% → iTRUST 约 77.5%）</p>
-            </div>
+          <div class="modules-table-wrap">
+            <table class="modules-table" aria-label="十二核心评估模块">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>模块</th>
+                  <th>核心校验逻辑</th>
+                  <th>早期权重</th>
+                  <th>A轮后权重</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>I</strong></td><td>前提洞察</td><td>技术可证伪；终局认知一致</td><td>35%</td><td>5%</td></tr>
+                <tr><td><strong>T</strong></td><td>时机窗口</td><td>结构性拐点 vs 周期炒作</td><td>25%</td><td>3%</td></tr>
+                <tr><td><strong>R1</strong></td><td>需求验证</td><td>真实付费意愿；替代成本</td><td>8%</td><td>10%</td></tr>
+                <tr><td><strong>R2</strong></td><td>交付能力</td><td>100→10000用户品控韧性</td><td>6%</td><td>9%</td></tr>
+                <tr><td><strong>R3</strong></td><td>落地实证</td><td>可追溯可审计真实流水</td><td>6%</td><td>9%</td></tr>
+                <tr><td><strong>U1</strong></td><td>生态位</td><td>精确竞争优势标定</td><td>5%</td><td>15%</td></tr>
+                <tr><td><strong>U2</strong></td><td>壁垒</td><td>追赶者模仿成本测算</td><td>5%</td><td>15%</td></tr>
+                <tr><td><strong>S1</strong></td><td>财务健康</td><td>LTV/CAC收敛验证</td><td>4%</td><td>14%</td></tr>
+                <tr><td><strong>S2</strong></td><td>资源安全</td><td>单点故障风险识别</td><td>3%</td><td>10%</td></tr>
+                <tr><td><strong>S3</strong></td><td>风险管控</td><td>结构化致命风险梳理</td><td>2%</td><td>6%</td></tr>
+                <tr><td><strong>T1</strong></td><td>团队能力</td><td>能力与阶段匹配度</td><td>5%</td><td>10%</td></tr>
+                <tr><td><strong>T2</strong></td><td>执行路径</td><td>资金-成果对应关系</td><td>5%</td><td>10%</td></tr>
+              </tbody>
+            </table>
           </div>
-          <p class="proof-foot">
-            完整方法论对比表与局限性声明见
-            <a href="itrust30.md">itrust30.md</a> 第七章。
+          <p class="modules-foot">
+            完整子模块、AI增强、软硬件融合细节 →
+            <a href="itrust30.md">白皮书 MD · 第四章</a>
           </p>
         </div>
       </section>
 
-      <section id="contrast" class="section-editorial" aria-labelledby="contrast-title">
+      <section id="cases" class="section-cases" aria-labelledby="cases-title">
         <div class="shell">
-          <header class="section-intro section-intro-narrow">
-            <p class="section-eyebrow">立场</p>
-            <h2 id="contrast-title">和常见工具差在哪</h2>
-            <p class="section-intro-desc">
-              一张网页说不清全部细节；这几条帮助访客快速自我分流 — 「我们是不是同一类人」。
-            </p>
+          <header class="section-intro">
+            <p class="section-eyebrow">实跑数字</p>
+            <h2 id="cases-title">智联智造：从创意到 A 轮的完整轨迹</h2>
           </header>
-          <ul class="contrast-list">
-            <li>
-              <strong>对标准商业计划书</strong>
-              <span>从「写一版文档」升级为「维护一棵活的假设树」— 改假设不必推倒重写。</span>
-            </li>
-            <li>
-              <strong>对商业模式画布</strong>
-              <span>画布擅长发散；iTRUST 补上<strong>阶段权重、评分与闭环反馈</strong>，面向筹资与执行而不是工作坊贴纸。</span>
-            </li>
-            <li>
-              <strong>对一次性 VC / YC 式访谈清单</strong>
-              <span>清单给问题；iTRUST 试图给<strong>同一企业在不同轮次的一致标尺</strong>与可追溯版本。</span>
-            </li>
-            <li>
-              <strong>对纯软件 SaaS 报表</strong>
-              <span>原生考虑<strong>物联与硬件信号</strong>进入孪生 — 制造与硬科技场景不是事后补丁。</span>
-            </li>
-          </ul>
+          <div class="cases-timeline">
+            <div class="case-card">
+              <p class="case-stage">创意阶段 · 2023.1</p>
+              <p class="case-desc">3人团队，只有 idea，完成孪生建模与商业计划书生成</p>
+              <div class="case-nums">
+                <div class="case-num">
+                  <span class="case-val">500万</span>
+                  <span class="case-lbl">种子轮金额</span>
+                </div>
+                <div class="case-num">
+                  <span class="case-val">2周</span>
+                  <span class="case-lbl">融资准备周期（传统：3个月）</span>
+                </div>
+              </div>
+              <div class="case-weights">
+                <span>I 40%</span><span>T 25%</span><span>R 20%</span><span>U 15%</span>
+              </div>
+            </div>
+            <div class="case-card">
+              <p class="case-stage">种子轮 · 2023.7</p>
+              <p class="case-desc">原型机完成，1家付费客户，验证交付与落地数据</p>
+              <div class="case-nums">
+                <div class="case-num">
+                  <span class="case-val">2000万</span>
+                  <span class="case-lbl">天使轮金额</span>
+                </div>
+                <div class="case-num">
+                  <span class="case-val">1.5亿</span>
+                  <span class="case-lbl">投后估值</span>
+                </div>
+              </div>
+              <div class="case-weights">
+                <span>I 25%</span><span>T 20%</span><span>R 25%</span><span>U 15%</span><span>S 15%</span>
+              </div>
+            </div>
+            <div class="case-card">
+              <p class="case-stage">天使轮 · 2024.7</p>
+              <p class="case-desc">12家客户，月营收50万，盈亏平衡，数字孪生监控上线</p>
+              <div class="case-nums">
+                <div class="case-num">
+                  <span class="case-val">8000万</span>
+                  <span class="case-lbl">A轮金额</span>
+                </div>
+                <div class="case-num">
+                  <span class="case-val">8亿</span>
+                  <span class="case-lbl">投后估值</span>
+                </div>
+              </div>
+              <div class="case-weights">
+                <span>I 18%</span><span>T 15%</span><span>R 30%</span><span>U 15%</span><span>S 17%</span><span>T 5%</span>
+              </div>
+            </div>
+            <div class="case-card">
+              <p class="case-stage">A轮 · 2026.1</p>
+              <p class="case-desc">85家客户，月营收300万，数字孪生全量运行，蒙特卡洛模拟融资路径</p>
+              <div class="case-nums">
+                <div class="case-num">
+                  <span class="case-val">100%</span>
+                  <span class="case-lbl">融资成功率（三轮）</span>
+                </div>
+                <div class="case-num">
+                  <span class="case-val">30-50亿</span>
+                  <span class="case-lbl">B轮预计估值</span>
+                </div>
+              </div>
+              <div class="case-weights">
+                <span>I 12%</span><span>T 10%</span><span>R 28%</span><span>U 20%</span><span>S 20%</span><span>T 10%</span>
+              </div>
+            </div>
+          </div>
+          <div class="cases-summary">
+            <div class="case-sum-item">
+              <span class="case-sum-val">85%</span>
+              <span class="case-sum-lbl">决策效率提升（融资准备从3个月缩至2周）</span>
+            </div>
+            <div class="case-sum-item">
+              <span class="case-sum-val">+17.5pts</span>
+              <span class="case-sum-lbl">回溯准确率 uplift（500案例，60% → 77.5%）</span>
+            </div>
+            <div class="case-sum-item">
+              <span class="case-sum-val">80-90%</span>
+              <span class="case-sum-lbl">单项目成本降低区间（相对传统分析师堆叠）</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section-editorial section-closer section-alt" aria-labelledby="closer-title">
+      <section id="compare" class="section-compare section-alt" aria-labelledby="compare-title">
+        <div class="shell">
+          <header class="section-intro">
+            <p class="section-eyebrow">立场清晰</p>
+            <h2 id="compare-title">iTRUST 能做的，其他方法论做不到</h2>
+          </header>
+          <div class="compare-table-wrap">
+            <table class="compare-table" aria-label="方法论对比">
+              <thead>
+                <tr>
+                  <th>维度</th>
+                  <th>iTRUST</th>
+                  <th>YC / 红杉清单</th>
+                  <th>商业模式画布</th>
+                  <th>标准 BP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>全周期动态权重</td>
+                  <td class="tick">✓ 创意→C轮自动切</td>
+                  <td class="cross">✗ 固定框架</td>
+                  <td class="cross">✗ 无阶段概念</td>
+                  <td class="cross">✗ 静态快照</td>
+                </tr>
+                <tr>
+                  <td>参数修改联动重算</td>
+                  <td class="tick">✓ 假设改→全局联动</td>
+                  <td class="cross">✗ 一次性输出</td>
+                  <td class="cross">✗ 内容可改但无联动</td>
+                  <td class="cross">✗ 改版需重写</td>
+                </tr>
+                <tr>
+                  <td>孪生体可模拟推演</td>
+                  <td class="tick">✓ 蒙特卡洛多场景</td>
+                  <td class="cross">✗ 无孪生能力</td>
+                  <td class="cross">✗ 无孪生能力</td>
+                  <td class="cross">✗ 无孪生能力</td>
+                </tr>
+                <tr>
+                  <td>软硬件信号接入</td>
+                  <td class="tick">✓ 1000+工业协议</td>
+                  <td class="cross">✗ 纯人工上报</td>
+                  <td class="cross">✗ 不支持</td>
+                  <td class="cross">✗ 不支持</td>
+                </tr>
+                <tr>
+                  <td>多方协作 + 链上确权</td>
+                  <td class="tick">✓ 投入量化→协议→上链</td>
+                  <td class="cross">✗ 无协作设计</td>
+                  <td class="cross">✗ 无协作设计</td>
+                  <td class="cross">✗ 无协作设计</td>
+                </tr>
+                <tr>
+                  <td>行业 Benchmark 对标</td>
+                  <td class="tick">✓ 30+行业实时对标</td>
+                  <td class="cross">✗ 无行业库</td>
+                  <td class="cross">✗ 无行业库</td>
+                  <td class="cross">✗ 无行业库</td>
+                </tr>
+                <tr>
+                  <td>决策效果闭环反馈</td>
+                  <td class="tick">✓ 自动追踪→模型优化</td>
+                  <td class="cross">✗ 无闭环</td>
+                  <td class="cross">✗ 无闭环</td>
+                  <td class="cross">✗ 执行与规划脱节</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="compare-foot">
+            效率 / 成本 / 准确率具体数字见
+            <a href="itrust30.md">白皮书 MD · 第七章</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section-closer" aria-labelledby="closer-title">
         <div class="shell shell-narrow">
-          <h2 id="closer-title" class="closer-title">深度阅读</h2>
+          <h2 id="closer-title">读完整公式与数据</h2>
           <p class="closer-text">
-            官网负责<strong>讲清楚模型与价值切口</strong>；公式级权重、模块校验逻辑、全景对比矩阵与案例流水，留在白皮书 MD 里供下载与印刷。
+            本页展示了 iTRUST 的**产品逻辑与核心数字**。
+            完整的十二模块定义、动态权重公式、效率/成本/准确率表与局限性声明，
+            均在 <strong>itrust30.md</strong> 中，可下载、可版本化、可印刷。
           </p>
           <div class="closer-actions">
             <a class="btn btn-primary" href="itrust30.md">打开 itrust30.md</a>
-            <a class="btn btn-ghost" href="whitepaper.html">备用网页索引</a>
           </div>
         </div>
       </section>
@@ -244,13 +382,12 @@
       <div class="shell">
         <div class="footer-eco">
           <span class="footer-eco-label">生态伙伴</span>
-          <a href="https://tableai.ai" target="_blank" rel="noopener noreferrer">TableAI</a>
+          <a href="https://tableai.ai" target="_blank" rel="noopener noreferrer">TableAI · tableai.ai</a>
           <span aria-hidden="true"> · </span>
-          <a href="https://opcglobal.ai" target="_blank" rel="noopener noreferrer">OPC Global</a>
+          <a href="https://opcglobal.ai" target="_blank" rel="noopener noreferrer">OPC Global · opcglobal.ai</a>
         </div>
         <div class="footer-inner">
-          <p class="footer-note">© 2026 iTRUST Labs.</p>
-          <p class="footer-note">商业数字孪生决策 · 叙事 · 协作 · 决策</p>
+          <p class="footer-note">© 2026 iTRUST Labs. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
