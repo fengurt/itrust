@@ -1,20 +1,17 @@
 # iTRUST
 
-Official site and whitepaper for **iTRUST 3.0** — AI-era commercial decision intelligence (商业数字孪生决策系统).
-
-- Static pages: `index.html`, `methodology.html`, styles in `css/`
-- Whitepaper source: `itrust30.md`
+- **`index.html`** — editorial landing page (model → uses → proof → contrast); not a paste of the whitepaper.
+- **`itrust30.md`** — full technical narrative, tables, and comparisons.
+- **`css/main.css`** — shared styles.
 
 ## GitHub Pages
 
-Use the repository root as the publishing source (default `index.html`).
+Publish from repository root (`index.html` as entry).
 
 ## Local preview
-
-Open `index.html` in a browser or serve the folder:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then visit `http://127.0.0.1:8080/`.
+Open `http://127.0.0.1:8080/`.

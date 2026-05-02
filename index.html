@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="iTRUST 3.0 — AI 时代的商业第二大脑。三大应用场景：商业计划书、多方协作、决策辅助。"
+      content="iTRUST — 商业数字孪生决策系统：用同一套孪生与评估模型，连接叙事、协作与决策。"
     />
-    <title>iTRUST 3.0 · AI 时代的商业第二大脑</title>
+    <title>iTRUST · 商业数字孪生决策</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,184 +16,225 @@
     />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body class="page-landing">
     <a class="visually-hidden" href="#main">跳到主要内容</a>
     <header class="header">
       <div class="shell header-inner">
-        <a class="brand" href="index.html">i<span>TRUST</span></a>
-        <nav class="nav" aria-label="主导航">
-          <a href="index.html" aria-current="page">首页</a>
-          <a href="#应用场景">应用场景</a>
-          <a href="whitepaper.html">白皮书全文</a>
-          <a href="whitepaper.html#chapter-7">方法论对比</a>
+        <a class="brand" href="#main">i<span>TRUST</span></a>
+        <nav class="nav" aria-label="页面导航">
+          <a href="#model">模型</a>
+          <a href="#uses">应用</a>
+          <a href="#proof">价值</a>
+          <a href="#contrast">差异</a>
+          <a href="itrust30.md">白皮书 MD</a>
         </nav>
       </div>
     </header>
 
     <main id="main">
-      <section class="hero">
-        <div class="shell hero-grid">
-          <div>
-            <p class="hero-eyebrow">官方白皮书 3.0 · 2026</p>
-            <h1>AI 时代的商业第二大脑</h1>
-            <p class="hero-lead">
-              以<strong style="color: var(--color-white)">三大应用场景</strong>为主线 — 可交互商业计划书、带确权的多方协作、行业定制化决策引擎 —
-              同一套商业数字孪生与十二模块评估底座，贯穿从文档到执行的全链路。
+      <section class="hero hero-landing" aria-labelledby="hero-title">
+        <div class="shell hero-landing-inner">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">决策操作系统 · 3.0</p>
+            <h1 id="hero-title">把公司放进一颗「可计算的孪生」里</h1>
+            <p class="hero-lead hero-lead-tight">
+              iTRUST 不是又一叠静态文档模板，而是一套<strong>商业数字孪生 + 可插拔评估模块</strong>：
+              实时假设、结构化评判、可追溯协作 — 让融资叙事、多方交易与战略取舍共用同一套真相版本。
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#应用场景">查看应用场景</a>
-              <a class="btn btn-ghost" href="whitepaper.html">白皮书全文（含参数表与对比）</a>
-              <a class="btn btn-ghost" href="itrust30.md">下载 MD</a>
+              <a class="btn btn-primary" href="#uses">看它解决什么问题</a>
+              <a class="btn btn-ghost" href="#model">先看模型怎么转起来</a>
             </div>
-            <p class="hero-jump">
-              <a href="whitepaper.html#chapter-7-comparison">第七章 · 与 YC / 红杉 / 商业画布 / 标准 BP 的全景对比 →</a>
-            </p>
           </div>
-          <aside class="hero-panel" aria-labelledby="values-heading">
-            <h2 id="values-heading" class="hero-panel-title">核心价值</h2>
-            <ul class="hero-values">
-              <li><strong>认知</strong>分散信息结构化为一站式决策知识</li>
-              <li><strong>效率</strong>数周级分析压缩至数小时级闭环</li>
-              <li><strong>质量</strong>数据与算法驱动的客观评估</li>
-              <li><strong>风险</strong>全流程可追溯、可验证、可优化</li>
-            </ul>
-          </aside>
+          <div class="hero-diagram" aria-hidden="true">
+            <div class="loop-ring">
+              <span class="loop-dot"></span>
+              <span class="loop-label">物理 &amp; 业务信号</span>
+            </div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-ring loop-ring-mid">
+              <span class="loop-dot"></span>
+              <span class="loop-label">孪生与图谱</span>
+            </div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-ring">
+              <span class="loop-dot"></span>
+              <span class="loop-label">推理 · 模拟 · 生成</span>
+            </div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-ring loop-ring-out">
+              <span class="loop-dot"></span>
+              <span class="loop-label">叙事 · 协议 · 决策输出</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="应用场景" class="section-scenarios" aria-labelledby="scenarios-heading">
+      <section id="model" class="section-editorial section-alt" aria-labelledby="model-title">
+        <div class="shell editorial-split">
+          <div class="editorial-text">
+            <p class="section-eyebrow">模型</p>
+            <h2 id="model-title">四层闭环，一件事贯穿到底</h2>
+            <p class="editorial-lead">
+              多数方法论停在幻灯片；iTRUST 试图停在<strong>可更新的镜像</strong>上 — 数据进来，结构对齐，假设一改，全局联动。
+            </p>
+            <ol class="layer-list">
+              <li>
+                <strong>感知</strong>
+                <span>财报、运营、文本与物联信号统一口径，而不是散落在表格与聊天记录里。</span>
+              </li>
+              <li>
+                <strong>孪生</strong>
+                <span>对象、关系与版本可追溯 — 你和投资人看到的是同一拓扑，而不是两份各自表述的 deck。</span>
+              </li>
+              <li>
+                <strong>认知</strong>
+                <span>语义理解、策略迭代、因果与蒙特卡洛 — 用来压缩「拍脑袋」而不是替代负责人的判断。</span>
+              </li>
+              <li>
+                <strong>应用</strong>
+                <span>计划书、合作协议、行业决策报告 — 输出形态可变，底层评分与假设保持一致。</span>
+              </li>
+            </ol>
+          </div>
+          <div class="editorial-aside">
+            <p class="aside-label">十二维模块 · 按阶段加权</p>
+            <p class="aside-note">
+              同一套字母骨架（I / T / R / U / S / T）拆成 12 个可插拔模块；轮融资阶段变化时，权重随之滑动 — 早期看前提与窗口，成熟期看壁垒与可持续性。
+            </p>
+            <div class="module-matrix" role="list">
+              <span class="module-chip" role="listitem" title="前提洞察">I</span>
+              <span class="module-chip" role="listitem" title="时机窗口">T</span>
+              <span class="module-chip" role="listitem" title="需求验证">R1</span>
+              <span class="module-chip" role="listitem" title="交付能力">R2</span>
+              <span class="module-chip" role="listitem" title="落地实证">R3</span>
+              <span class="module-chip" role="listitem" title="生态位">U1</span>
+              <span class="module-chip" role="listitem" title="壁垒">U2</span>
+              <span class="module-chip" role="listitem" title="财务健康">S1</span>
+              <span class="module-chip" role="listitem" title="资源安全">S2</span>
+              <span class="module-chip" role="listitem" title="风险管控">S3</span>
+              <span class="module-chip" role="listitem" title="团队能力">T1</span>
+              <span class="module-chip" role="listitem" title="执行路径">T2</span>
+            </div>
+            <p class="aside-foot">
+              模块定义、校验逻辑与权重表见
+              <a href="itrust30.md">白皮书 MD</a>（第四、五章）。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="uses" class="section-editorial" aria-labelledby="uses-title">
         <div class="shell">
-          <header class="scenarios-head">
-            <p class="section-eyebrow">第三章 · 三大核心应用场景</p>
-            <h2 id="scenarios-heading">应用场景</h2>
-            <p class="section-desc">
-              方法论优先服务于<strong style="color: var(--color-white)">商业计划书生成</strong>、
-              <strong style="color: var(--color-white)">多方协作</strong>与
-              <strong style="color: var(--color-white)">商业决策辅助</strong>。
-              以下为白皮书原文完整第三节；参数交互、权重矩阵与业界对比见
-              <a href="whitepaper.html">白皮书全文</a>。
+          <header class="section-intro">
+            <p class="section-eyebrow">应用</p>
+            <h2 id="uses-title">三道入口，同一底座</h2>
+            <p class="section-intro-desc">
+              网页要讲清的只有一句话：<strong>用户在什么时刻打开 iTRUST，会得到什么不可替代的体验。</strong>
+              下面是三道最典型的入口 — 不是章节复述，而是产品设计视角的切片。
             </p>
           </header>
-
-          <div class="scenario-stack">
-            <article class="scenario-block" id="scene-bp">
-              <h3>3.1 可交互・多场景适配的智能商业计划书生成</h3>
-              <p>
-                iTRUST 3.0 重新定义了商业计划书的创作与使用方式，从静态文档升级为动态可交互的智能决策工具。
+          <div class="use-grid">
+            <article class="use-card">
+              <p class="use-kicker">叙事 · Narrative</p>
+              <h3 class="use-title">交互式商业叙事</h3>
+              <p class="use-problem">痛点：Deck 改到第十版，假设早已漂移，没人能说清「这一轮数字依据是什么」。</p>
+              <p class="use-fix">
+                iTRUST 把增长率、毛利、市场边界、团队配置等放进<strong>同一套可回放的参数面</strong> — 调一个数，预测与叙事同步改写。
               </p>
-              <h4>3.1.1 多场景自动适配</h4>
-              <p>系统内置12个核心场景模板，可根据用户需求自动适配最佳呈现框架：</p>
-              <ul>
-                <li><strong>创业融资场景</strong>：聚焦市场空间、团队能力、财务预测与估值逻辑，突出增长潜力与投资回报，适配天使轮、A 轮等早期融资需求</li>
-                <li><strong>内部立项场景</strong>：强调资源投入、ROI 测算、风险评估与里程碑设置，适配企业内部创新项目的审批与资源申请</li>
-                <li><strong>政府申报场景</strong>：突出技术创新性、社会价值、就业带动与产业带动效应，严格遵循各类政府申报的格式与内容要求</li>
-                <li><strong>并购重组场景</strong>：重点分析协同效应、整合方案、估值合理性与退出路径，适配企业并购、战略投资等资本运作需求</li>
-                <li><strong>硬科技/AI/智能制造等垂直行业场景</strong>：自动调整评估重点，突出技术壁垒、供应链成熟度、硬件交付能力等行业核心要素</li>
-              </ul>
-              <p>
-                系统可自动识别场景特征，智能调整内容侧重点、数据颗粒度与呈现风格，确保商业计划书与目标受众的期望高度匹配。
-              </p>
-              <h4>3.1.2 全参数可交互</h4>
-              <p>iTRUST 3.0 支持所有核心参数的实时调整与自动重算，真正实现「所见即所得」的决策体验：</p>
-              <ul>
-                <li><strong>核心财务指标交互</strong>：用户可实时调整收入增长率、毛利率、费用率等关键假设，系统自动重新计算三年财务预测、现金流模型与估值结果</li>
-                <li><strong>团队配置交互</strong>：调整核心团队成员背景、股权结构、激励方案，系统自动评估团队能力得分并更新风险提示</li>
-                <li><strong>市场规模交互</strong>：调整目标市场定义、渗透率假设、定价策略，系统自动更新 TAM/SAM/SOM 测算与市场机会评估</li>
-                <li><strong>硬件参数交互</strong>：调整生产设备产能、良品率、成本等参数，系统自动更新单位经济模型与规模化可行性评估</li>
-              </ul>
-              <p>所有参数调整实时生效，相关联的所有分析维度自动同步更新，确保商业计划书始终反映最新的决策思考。</p>
-              <div class="scenario-meta">
-                <a href="whitepaper.html#chapter-5">全周期动态权重与加成规则 →</a>
-                <a href="whitepaper.html#chapter-7-efficiency">效率 / 成本 / 准确率量化对比 →</a>
-              </div>
+              <p class="use-outcome">结果：面向投资人、董事会或申报口径，留下的是<strong>可辩论、可版本化</strong>的故事，而不是静态 PDF。</p>
             </article>
-
-            <article class="scenario-block" id="scene-collab">
-              <h3>3.2 带确权・可量化的多方协作平台</h3>
-              <p>
-                iTRUST 3.0 为商业合作提供从评估到执行的全流程智能化支撑，解决多方协作中的信任问题与利益分配难题。
+            <article class="use-card">
+              <p class="use-kicker">协作 · Collaboration</p>
+              <h3 class="use-title">多方交易的信任协议层</h3>
+              <p class="use-problem">痛点：谁贡献了什么难量化，退出与分配谈不拢，事后扯皮成本高。</p>
+              <p class="use-fix">
+                资源投入标准化 → ROI 与里程碑挂钩 → 条款草案与风险提示自动生成；关键节点与分配依据可<strong>链上存证</strong>（若启用）。
               </p>
-              <h4>3.2.1 投入产出自动评估</h4>
-              <p>系统基于各参与方的角色定位与资源投入，自动构建公平透明的收益分配机制：</p>
-              <ul>
-                <li><strong>资源投入量化</strong>：将资金、技术、渠道、人力、硬件设备等各类投入转化为标准化的贡献权重</li>
-                <li><strong>ROI 智能测算</strong>：基于项目整体收益预测，结合各方投入的时间节点与风险承担，计算差异化的投资回报率</li>
-                <li><strong>动态收益分配</strong>：支持按阶段、按里程碑的阶梯式收益分配方案，激励各方持续投入与价值创造</li>
-              </ul>
-              <p>评估模型内置行业基准数据与历史案例库，确保分配方案既符合市场惯例又体现项目特性。</p>
-              <h4>3.2.2 权责协议自动起草</h4>
-              <p>基于投入产出评估结果，系统自动生成符合法律规范的合作协议：</p>
-              <ul>
-                <li><strong>条款智能生成</strong>：根据各方角色与权责划分，自动生成合作协议的核心条款，包括出资方式、决策机制、收益分配、退出机制等</li>
-                <li><strong>风险点智能提示</strong>：识别合作模式中的潜在法律风险与商业风险，提供针对性的条款优化建议</li>
-                <li><strong>版本管理与对比</strong>：支持协议版本的迭代管理与差异对比，确保谈判过程的可追溯性</li>
-              </ul>
-              <p>生成的协议文本经过专业律师团队的模板验证，确保法律严谨性与商业实用性的平衡。</p>
-              <h4>3.2.3 全流程区块链确权</h4>
-              <p>iTRUST 3.0 集成区块链技术，实现协作全流程的可信存证：</p>
-              <ul>
-                <li><strong>关键决策节点上链</strong>：董事会决议、重大投资决策、里程碑验收等关键节点的确认信息实时上链</li>
-                <li><strong>协议签署存证</strong>：电子签署的合作协议哈希值实时写入区块链，确保协议内容不可篡改</li>
-                <li><strong>收益分配溯源</strong>：每一笔收益分配的计算依据与执行记录上链存证，实现分配过程的全程可追溯</li>
-              </ul>
-              <p>区块链确权为多方协作提供了技术层面的信任基础设施，大幅降低合作摩擦与纠纷风险。</p>
+              <p class="use-outcome">结果：把「口头默契」推进到<strong>可审计的流程</strong>，摩擦发生在谈判桌前而不是法庭上。</p>
             </article>
-
-            <article class="scenario-block" id="scene-decision">
-              <h3>3.3 行业定制化的智能辅助决策引擎</h3>
-              <p>iTRUST 3.0 提供深度行业化的决策支持，将通用评估框架与垂直行业特性深度融合。</p>
-              <h4>3.3.1 分行业数据对标洞察</h4>
-              <p>系统内置 30+ 重点行业的专业数据库，提供实时的行业对标分析：</p>
-              <ul>
-                <li><strong>竞品动态对标</strong>：实时监控竞争对手的产品发布、融资动态、战略调整，智能分析对本企业的影响与应对策略</li>
-                <li><strong>市场机会识别</strong>：基于行业数据的异常波动与趋势变化，自动识别潜在的市场机会与风险点</li>
-                <li><strong>运营指标 Benchmark</strong>：提供行业分位值的运营指标对比，识别企业的优势领域与改进空间</li>
-                <li><strong>硬件供应链对标</strong>：针对制造业、硬科技行业，提供核心零部件价格、交付周期、供应商能力的实时对标</li>
-              </ul>
-              <p>覆盖行业包括：人工智能、生物医药、新能源、高端制造、企业服务、消费零售、金融科技等。</p>
-              <h4>3.3.2 高质量结构化决策输出</h4>
-              <p>基于 iTRUST 12核心评估框架，系统输出结构化、可执行的决策建议报告：</p>
-              <ul>
-                <li><strong>评估维度结构化</strong>：按照 12 核心模块的标准框架，每个维度提供量化评分、行业对标、问题诊断与改进建议</li>
-                <li><strong>建议可执行化</strong>：每条决策建议都附带具体的行动步骤、资源需求、时间节点与预期效果，避免空泛的方向性指导</li>
-                <li><strong>报告个性化</strong>：根据决策者的角色（CEO / 投资人 / 部门负责人）自动调整报告的侧重点与颗粒度</li>
-                <li><strong>模拟结果可视化</strong>：将不同决策场景的模拟结果以图表形式直观呈现，帮助决策者快速理解差异</li>
-              </ul>
-              <p>决策报告同时提供交互式的探索界面，支持用户深入挖掘特定维度的分析细节。</p>
-              <div class="scenario-meta">
-                <a href="whitepaper.html#chapter-4">十二章模块与校验逻辑表 →</a>
-              </div>
+            <article class="use-card">
+              <p class="use-kicker">决策 · Decision</p>
+              <h3 class="use-title">行业化的决策副驾驶</h3>
+              <p class="use-problem">痛点：报告很长，行动很短；对标靠印象，节奏靠直觉。</p>
+              <p class="use-fix">
+                行业数据库 + 十二维评分 + 角色定制的报告颗粒度（CEO / IC / 业务负责人）— 输出<strong>带步骤与时间点</strong>的建议，而不是形容词堆砌。
+              </p>
+              <p class="use-outcome">结果：复杂取舍被拆成<strong>可执行的下一步</strong>，模拟结果可见、可对比。</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-alt" aria-labelledby="arch-heading">
+      <section id="proof" class="section-editorial section-alt" aria-labelledby="proof-title">
         <div class="shell">
-          <header class="section-head">
-            <p class="section-eyebrow">第二章节选 · 技术架构</p>
-            <h2 id="arch-heading">四层架构（感知 · 孪生 · 认知 · 应用）</h2>
-            <p class="section-desc">
-              完整定义与附录术语见 <a href="whitepaper.html">白皮书全文</a>。
+          <header class="section-intro section-intro-narrow">
+            <p class="section-eyebrow">价值锚点</p>
+            <h2 id="proof-title">用数字说话，但不说满</h2>
+            <p class="section-intro-desc">
+              下列数字来自白皮书中的<strong>回溯样本与区间估算</strong>，用于表达数量级 — 真实效果取决于数据质量与落地深度。
             </p>
           </header>
-          <div class="arch">
-            <div class="arch-item">
-              <h4>感知层</h4>
-              <p>多源数据接入，非结构化语义理解，外部环境动态监控，物联与工业数据自动采集。</p>
+          <div class="stat-grid">
+            <div class="stat-card">
+              <p class="stat-value">30–60×</p>
+              <p class="stat-label">端到端决策准备时间（周 → 小时量级）</p>
             </div>
-            <div class="arch-item">
-              <h4>孪生层</h4>
-              <p>十二模块本体建模，关系映射与推理，状态同步与版本管理，物理—数字双向映射。</p>
+            <div class="stat-card">
+              <p class="stat-value">80–90%</p>
+              <p class="stat-label">相对传统顾问堆叠的人力 / 项目成本区间（示意）</p>
             </div>
-            <div class="arch-item">
-              <h4>认知层</h4>
-              <p>商业语义理解与生成，策略优化迭代，因果影响路径，蒙特卡洛多场景推演。</p>
+            <div class="stat-card">
+              <p class="stat-value">+17.5<span class="stat-unit">pts</span></p>
+              <p class="stat-label">500 案例回溯下整体准确率中值 uplift（传统约 60% → iTRUST 约 77.5%）</p>
             </div>
-            <div class="arch-item">
-              <h4>应用层</h4>
-              <p>计划书交互、协作协议、行业决策报告、孪生对设备的反向控制。</p>
-            </div>
+          </div>
+          <p class="proof-foot">
+            完整方法论对比表与局限性声明见
+            <a href="itrust30.md">itrust30.md</a> 第七章。
+          </p>
+        </div>
+      </section>
+
+      <section id="contrast" class="section-editorial" aria-labelledby="contrast-title">
+        <div class="shell">
+          <header class="section-intro section-intro-narrow">
+            <p class="section-eyebrow">立场</p>
+            <h2 id="contrast-title">和常见工具差在哪</h2>
+            <p class="section-intro-desc">
+              一张网页说不清全部细节；这几条帮助访客快速自我分流 — 「我们是不是同一类人」。
+            </p>
+          </header>
+          <ul class="contrast-list">
+            <li>
+              <strong>对标准商业计划书</strong>
+              <span>从「写一版文档」升级为「维护一棵活的假设树」— 改假设不必推倒重写。</span>
+            </li>
+            <li>
+              <strong>对商业模式画布</strong>
+              <span>画布擅长发散；iTRUST 补上<strong>阶段权重、评分与闭环反馈</strong>，面向筹资与执行而不是工作坊贴纸。</span>
+            </li>
+            <li>
+              <strong>对一次性 VC / YC 式访谈清单</strong>
+              <span>清单给问题；iTRUST 试图给<strong>同一企业在不同轮次的一致标尺</strong>与可追溯版本。</span>
+            </li>
+            <li>
+              <strong>对纯软件 SaaS 报表</strong>
+              <span>原生考虑<strong>物联与硬件信号</strong>进入孪生 — 制造与硬科技场景不是事后补丁。</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-editorial section-closer section-alt" aria-labelledby="closer-title">
+        <div class="shell shell-narrow">
+          <h2 id="closer-title" class="closer-title">深度阅读</h2>
+          <p class="closer-text">
+            官网负责<strong>讲清楚模型与价值切口</strong>；公式级权重、模块校验逻辑、全景对比矩阵与案例流水，留在白皮书 MD 里供下载与印刷。
+          </p>
+          <div class="closer-actions">
+            <a class="btn btn-primary" href="itrust30.md">打开 itrust30.md</a>
+            <a class="btn btn-ghost" href="whitepaper.html">备用网页索引</a>
           </div>
         </div>
       </section>
@@ -203,13 +244,13 @@
       <div class="shell">
         <div class="footer-eco">
           <span class="footer-eco-label">生态伙伴</span>
-          <a href="https://tableai.ai" target="_blank" rel="noopener noreferrer">TableAI · tableai.ai</a>
+          <a href="https://tableai.ai" target="_blank" rel="noopener noreferrer">TableAI</a>
           <span aria-hidden="true"> · </span>
-          <a href="https://opcglobal.ai" target="_blank" rel="noopener noreferrer">OPC Global · opcglobal.ai</a>
+          <a href="https://opcglobal.ai" target="_blank" rel="noopener noreferrer">OPC Global</a>
         </div>
         <div class="footer-inner">
-          <p class="footer-note">© 2026 iTRUST Labs. All Rights Reserved.</p>
-          <p class="footer-note">iTRUST 3.0 · 让复杂决策变得简单、科学、可信赖</p>
+          <p class="footer-note">© 2026 iTRUST Labs.</p>
+          <p class="footer-note">商业数字孪生决策 · 叙事 · 协作 · 决策</p>
         </div>
       </div>
     </footer>
